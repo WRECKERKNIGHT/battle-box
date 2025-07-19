@@ -1,13 +1,467 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BattleBOX - Gaming Café & Store</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP Zone Gaming Café - Premium Gaming Experience in Patna</title>
+    <meta name="description" content="Experience the ultimate gaming destination in Patna with high-end gaming PCs, tournaments, and more at XP Zone Gaming Café!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 14L8 16L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">XP ZONE</span>
+                    <span class="logo-sub">Gaming Café</span>
+                </div>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn-primary">Book Now</button>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <img src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Gaming Setup" class="hero-image active">
+            <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Esports Tournament" class="hero-image">
+            <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Gaming PC" class="hero-image">
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">WELCOME TO</span>
+                    <span class="title-main">XP ZONE</span>
+                    <span class="title-sub">Gaming Café & Esports Arena</span>
+                </h1>
+                <p class="hero-description">
+                    Experience the ultimate gaming destination in Patna with high-end gaming PCs, 
+                    daily tournaments, and the most vibrant gaming community in Bihar!
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 2V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 2V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 10H21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Start Gaming Now
+                    </button>
+                    <button class="btn-secondary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+                        </svg>
+                        Watch Tour
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Gaming Services</h2>
+                <p class="section-subtitle">Premium gaming experiences with cutting-edge technology</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Gaming Stations</h3>
+                    <p class="service-description">High-performance gaming PCs with RTX 3060 Ti, 16GB RAM, and 144Hz monitors for the ultimate gaming experience.</p>
+                    <div class="service-price">₹60/hour</div>
+                    <ul class="service-features">
+                        <li>RTX 3060 Ti Graphics</li>
+                        <li>16GB DDR4 RAM</li>
+                        <li>144Hz Gaming Monitor</li>
+                        <li>Mechanical Keyboard</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Esports Tournaments</h3>
+                    <p class="service-description">Daily tournaments in popular games like BGMI, Valorant, CS2, and FIFA with exciting cash prizes.</p>
+                    <div class="service-price">Entry ₹50</div>
+                    <ul class="service-features">
+                        <li>Daily Tournaments</li>
+                        <li>Cash Prizes up to ₹5000</li>
+                        <li>Multiple Game Titles</li>
+                        <li>Professional Setup</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M23 21V19C23 18.1645 22.7155 17.3541 22.2094 16.7007C21.7033 16.0473 20.9999 15.5922 20.2 15.4172" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 3.13C16.8003 3.30491 17.5037 3.75904 18.0098 4.41242C18.5159 5.06579 18.8004 5.87622 18.8004 6.71C18.8004 7.54378 18.5159 8.35421 18.0098 9.00758C17.5037 9.66096 16.8003 10.1151 16 10.29" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Group Gaming</h3>
+                    <p class="service-description">Book multiple stations for your squad and enjoy team gaming sessions with friends and family.</p>
+                    <div class="service-price">₹250/hour (5 PCs)</div>
+                    <ul class="service-features">
+                        <li>Team Bookings</li>
+                        <li>Group Discounts</li>
+                        <li>Private Sessions</li>
+                        <li>Custom Tournaments</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8H22L20 12L22 16H18L16 12L18 8Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 8H2L4 12L2 16H6L8 12L6 8Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 2L14 8L12 14L10 8L12 2Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 14L14 20L12 22L10 20L12 14Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Gaming Café</h3>
+                    <p class="service-description">Enjoy delicious snacks, beverages, and meals while gaming in our comfortable gaming lounge.</p>
+                    <div class="service-price">₹30 onwards</div>
+                    <ul class="service-features">
+                        <li>Fresh Snacks</li>
+                        <li>Cold Beverages</li>
+                        <li>Hot Meals</li>
+                        <li>Gaming Lounge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">High-Speed Internet</h3>
+                    <p class="feature-desc">1Gbps Fiber Connection</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22S8 18 8 13V6L12 4L16 6V13C16 18 12 22 12 22Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Secure Environment</h3>
+                    <p class="feature-desc">24/7 CCTV Monitoring</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 12S5 4 12 4S23 12 23 12S19 20 12 20S1 12 1 12Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Free WiFi</h3>
+                    <p class="feature-desc">Complimentary Internet</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Extended Hours</h3>
+                    <p class="feature-desc">10 AM - 12 AM Daily</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About XP Zone Gaming Café</h2>
+                    <p>XP Zone Gaming Café is Patna's premier gaming destination, offering state-of-the-art gaming equipment, comfortable seating, and an atmosphere designed for serious gamers and casual players alike.</p>
+                    <p>Since our establishment, we've been committed to providing the best gaming experience with high-performance PCs featuring RTX graphics cards, mechanical keyboards, and 144Hz monitors for competitive gaming.</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Happy Gamers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Gaming Stations</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">14</div>
+                            <div class="stat-label">Hours Daily</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="XP Zone Gaming Setup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Take a look at our amazing gaming setup and facilities</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Gaming Stations">
+                    <div class="gallery-overlay">
+                        <h3>Gaming Stations</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Tournament Setup">
+                    <div class="gallery-overlay">
+                        <h3>Tournament Setup</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Premium PCs">
+                    <div class="gallery-overlay">
+                        <h3>Premium PCs</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1174746/pexels-photo-1174746.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Gaming Lounge">
+                    <div class="gallery-overlay">
+                        <h3>Gaming Lounge</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Esports Arena">
+                    <div class="gallery-overlay">
+                        <h3>Esports Arena</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.pexels.com/photos/1293261/pexels-photo-1293261.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Team Gaming">
+                    <div class="gallery-overlay">
+                        <h3>Team Gaming</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to level up your gaming experience? Visit us or get in touch!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit XP Zone Gaming Café</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Near Boring Canal Road, Patna, Bihar 800001</p>
+                            <p>Opposite City Mall, Ground Floor</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.52 21.39 21 20.83 21C9.28 21 0 11.72 0 0.17C0 -0.39 0.48 -1 1.08 -1H4.08C4.68 -1 5.08 -0.39 5.08 0.17V3.17" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                            <p>+91 87654 32109</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@xpzonecafe.com</p>
+                            <p>bookings@xpzonecafe.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Sunday: 10:00 AM - 12:00 AM</p>
+                            <p>14 hours of non-stop gaming!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 14L8 16L18 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">XP ZONE</span>
+                            <span class="logo-sub">Gaming Café</span>
+                        </div>
+                    </div>
+                    <p>Patna's premier gaming destination with high-end gaming PCs, tournaments, and the best gaming community.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Gaming Services</h4>
+                    <ul>
+                        <li>Gaming Stations (₹60/hr)</li>
+                        <li>Esports Tournaments</li>
+                        <li>Group Gaming Sessions</li>
+                        <li>Gaming Café & Snacks</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +91 98765 43210</li>
+                        <li>📧 info@xpzonecafe.com</li>
+                        <li>📍 Near Boring Canal Road, Patna</li>
+                        <li>🕒 10 AM - 12 AM Daily</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 XP Zone Gaming Café, Patna. All rights reserved.</p>
+                <p>Designed for gamers, by gamers. Level up your gaming experience!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
